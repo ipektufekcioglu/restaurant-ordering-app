@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="hero" id="hero">
+            <h1>Jimmy's Dinner</h1>
+            <h3 class="slogan">The best burgers and pizzas in town.</h3>
+        </header>
+        <div class="container" id="container">
+
+        </div>
+        <div class="hidden" id="order-outer-container">
+            <div class="order-container">
+                <h2 class="order-header">Your order</h2>
+                <div class="basket" id="basket">
+
+                </div>
+                <button class="order-btn" id="order-btn">Complete order</button>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-inner">
+                <h2 class="form-title">Enter card details</h2>
+                <form class="payment-form" id="payment-form" onsubmit="return false;">
+                    <input class="form-item" name="fullname" type="text" required placeholder="Enter your name">
+                    <input class="form-item" name="number" type="number" required placeholder="Enter your card number">
+                    <input class="form-item" name="ccv" type="number" required placeholder="Enter CVV">
+                    <button class="pay-btn" type="submit">Pay</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="hidden order-success" id="order-success">
+
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

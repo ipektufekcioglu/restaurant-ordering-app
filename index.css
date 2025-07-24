@@ -1,0 +1,259 @@
+
+body {
+    margin: 0;
+    width: 600px;
+    font-family: "Smythe", system-ui;
+    font-weight: 400px;
+    position: relative;
+} 
+
+.hero {
+    background-image: url("/images/hero-image.jpg");
+    background-position: right 10% bottom 32%;
+    background-size: auto;
+
+    height: 175px;  
+    color: #ffffff;
+
+}
+
+h1 {
+    font-size: 39px;
+    padding-top: 46px;
+    margin-bottom: 0px;
+    line-height: 24px;
+}
+
+.slogan {
+    font-size: 22px;
+    line-height: 14px;
+    margin: 25px 0px;
+}
+
+h1, .slogan {
+    padding-left: 46px;
+}
+
+
+.item {
+    display: flex;
+    border-bottom: 1px solid #D2D2D2;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    width: 508px;
+    height: 140px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item-left {
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    width: 70px;
+    height: 89px;
+    font-size: 79px;
+    margin: 0px;
+}
+
+.item-info {
+    margin-left: 31px;
+    margin-right: 31px;
+    padding-top: 20px;
+}
+
+.add-button {
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    background: none;
+    font-size: 32px;
+    color:#3C3C3C; 
+    font-family: "Inter", sans-serif;;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+
+.add-button:hover, .order-btn:hover, .pay-btn:hover {
+    cursor: pointer;
+}
+
+.item-name, .item-ingridients, .item-price {
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.item-name, .order-header {
+    font-size: 28px;
+    line-height: 17px;
+}
+
+.item-ingridients {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+}
+
+.item-price {
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+.item-name, .item-price {
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 53px;
+}
+
+.order-btn {
+    width: 508px;
+    height: 60px;
+    font-size: 16px;
+    margin-top: 33px;
+}
+
+.pay-btn, .order-btn {
+    background-color: #16DB99;
+    color:#ffffff;
+    border: none;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.pay-btn {
+    width: 475px;
+    height: 71px;
+    margin-top: 47px;
+    font-size: 20px;
+}
+
+.bill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 508px;;
+    align-items: center;
+    
+}
+
+.order-name-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.remove-btn {
+    border: none;
+    background-color: white;
+    width: 77px;
+    height: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #BBBBBB;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 13px;
+}
+
+.total-price {
+    border-top: 2px solid #393333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    width: 524px;
+    height: 542px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 4px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1.3px solid #757575;
+    box-shadow: 0 25px 80px  rgba(0,0,0,0.5);
+
+}
+
+
+.modal-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item {
+    width:476px;
+    height: 71px;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    color: #757575;
+    font-size: 20px;
+    margin-top: 24px;
+    padding-left: 26px;
+    
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    appearance: textfield;
+}
+
+.order-success {
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-size: 24px;
+    border: none;
+    border-radius: 2px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 45px;
+}
